@@ -8,7 +8,7 @@ import numpy as np
 
 
 class ImageProcessing:
-    def resize_Image(self):
+    def resize_Image(self):#sample image converter to change shape and size of existing images
         with open('img_6.jpg', 'r+b') as f:
             with Image.open(f) as img:
                 print(img.size)
@@ -18,7 +18,7 @@ class ImageProcessing:
                 pyplot.imshow(data)
                 pyplot.show()
 
-    def file_resize(self):
+    def file_resize(self): #passing particular folder to convert image data to csv file for training purposes
         IMG_DIR = '/home/code_broom/PycharmProjects/DistractedDrivers/test'
         for img in os.listdir(IMG_DIR):
             img_array = cv2.imread(os.path.join(IMG_DIR, img), cv2.IMREAD_GRAYSCALE)
