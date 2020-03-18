@@ -7,7 +7,7 @@ class ImageCapturing:
         success = True
         fps = int(vidcap.get(cv2.CAP_PROP_FPS))
 
-        while count<500:
+        while count<900:
             success, image = vidcap.read()
             print('read a new frame:', success)
             if count % (10 * fps) == 0:
