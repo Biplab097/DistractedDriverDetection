@@ -18,7 +18,6 @@ class ImageProcessing:
                 pyplot.imshow(data)
                 pyplot.show()
 
-
     def file_resize(self): #passing particular folder to convert image data to csv file for training purpose
         IMG_DIR = '/home/code_broom/PycharmProjects/DistractedDrivers/test'
         for img in os.listdir(IMG_DIR):
