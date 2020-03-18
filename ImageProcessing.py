@@ -8,7 +8,7 @@ import numpy as np
 
 
 class ImageProcessing:
-    def resize_Image(self):#sample image converter to change shape and size of existing images
+    def resize_Image(self):#sample image converter to change shape and size of existing image to 64x64
         with open('img_6.jpg', 'r+b') as f:
             with Image.open(f) as img:
                 print(img.size)
