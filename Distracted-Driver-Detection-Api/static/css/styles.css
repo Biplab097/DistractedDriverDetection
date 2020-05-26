@@ -1,0 +1,53 @@
+.big{
+    background-image:url("../images/collage3.jpg");
+}
+h1 {
+  color: white;
+  text-shadow: 4px 4px 4px #000000;
+}
+
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+  transition: box-shadow .3s;
+  width: 750px;
+  height: 60px;
+  margin: 20px;
+  border-radius:20px;
+  border: 2px solid #ccc;
+  background: #fff;
+  float: left;
+
+}
+.box:hover {
+  box-shadow: 0 0 190px rgba(33,33,33,.2);
+}
+
+a.button6{
+ display:inline-block;
+ padding:0.7em 1.4em;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.15em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ text-transform:uppercase;
+ font-weight:400;
+ color:#FFFFFF;
+ background-color:#3369ff;
+ box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+ text-align:center;
+ position:relative;
+}
+a.button6:active{
+ top:0.1em;
+}
+@media all and (max-width:30em){
+ a.button6{
+  display:block;
+  margin:0.4em auto;
+ }
+}

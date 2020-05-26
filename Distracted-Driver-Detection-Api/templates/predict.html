@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>Prediction for Driver Distraction!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body class="big">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <form class="form-inline " action="/action_page.php">
+    <input class="form-control mr-sm-2 navbar-toggler-right" type="text" placeholder="Search">
+    <button class="btn btn-success " type="submit">Search</button>
+  </form>
+</nav>
+<div id="maintext" style="position:absolute; margin:auto; width:700px; height:300px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">
+    <div class="box"><h1 class="text-danger mb-5 "> <strong>Prediction for Driver Distraction!</strong> </h1></div>
+    <p><h2 class="text-danger box "><strong>Deep Learning Model gave this prediction:</strong></h2> </p>
+  <table class="table table-bordered table-dark" style="width:100%">
+  <tr>
+     <thead class="thead-dark">
+    <th>Rank</th>
+    <th>Class</th>
+    <!--<th>Probability</th>-->
+     </thead>
+  </tr>
+  <tr  class="table-danger text-dark">
+    <td>Most Likely:</td>
+    <td>{{ predictions.class1 }}</td>
+    <!--<td>{{ predictions.prob1 }}</td>-->
+  </tr>
+  <tr class="table-danger text-dark">
+    <td>2nd Most Likely:</td>
+      <td>{{ predictions.class2 }}</td>
+  </tr>
+      <!--<td>{{ predictions.prob2 }}</td>                                                                                                                                      </tr>                                                                                                                                                                   <tr>
+    <td>3rd Most Likely:</td>
+    <td>{{ predictions.class3 }}</td>
+    <td>{{ predictions.prob3 }}</td>
+  </tr>-->
+  </table>
+  <br>
+    <br>
+
+    <!--<div class="col-md-4 col-lg-2">-->
+        <div class="text-center">
+          <a href="{{ url_for('main_page') }}"><button class="btn btn-primary polaroid" >Try again?</button></a>
+        </div>
+    <!--</div>-->
+</div>
+</body>
+</html>

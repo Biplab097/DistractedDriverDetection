@@ -1,0 +1,102 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>Classify your Image!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body style="background-color:black">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+          <img src="../static/images/logo_2.png" alt="">
+          <a class="navbar-brand font-weight-bold text-light" href="#">Distracted Driver Detection</a>
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+  <a class="navbar-brand font-weight-bold text-light" href="#">Distracted Driver Detection</a>
+</nav>-->
+<div id="maintext" style="position:absolute; margin:auto; width:700px; height:350px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">
+  <h1 class="text-light mb-2"> Upload your image to be classified! </h1>
+  <h4 class="text-light mb-5">(Please upload images less than 1024kb in size)</h4>
+  <form method=post enctype=multipart/form-data>
+     <p class="text-light">
+        <input type=file name=file>
+        <input class="danger" type=submit value=Upload>
+     </p>
+  </form>
+<footer class="page-footer font-small teal pt-4">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold text-light">About</h5>
+        <p class="text-light mb-5">This is a web application framing the trained model for detection of distracted image
+        trained on VGG-16 architecture model and then load in server for prediction so that it may be used by any user remotely</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold text-light">Insight</h5>
+        <p class="text-light mb-5">The model is builed using thousands of driver images passed in a CNN network and finally it is showing
+        around 96% accuracy based on 7 classes of prediction which can be shown after any user submit any image for detection.</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">https://github.com/Biplab097/DistractedDriverDetection</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+
+</body>
+</html>
